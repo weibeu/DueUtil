@@ -1,1 +1,1 @@
-worker: python cosmos.py
+worker: python run.py
