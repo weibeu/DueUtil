@@ -13,3 +13,4 @@ emoji==0.4.5
 Pillow==3.4.2
 beautifulsoup4==4.6.0
 typing==3.6.2
+ssdeep==3.3
