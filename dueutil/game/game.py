@@ -3,7 +3,6 @@ import re
 import time
 
 # import enchant
-import ssdeep
 # from guess_language import guess_language
 
 import generalconfig as gconf
@@ -29,17 +28,7 @@ def get_spam_level(player, message_content):
     Get's a spam level for a message using a 
     fuzzy hash > 50% means it's probably spam
     """
-
-    message_hash = ssdeep.hash(message_content)
-    spam_level = 0
-    spam_levels = [ssdeep.compare(message_hash, prior_hash) for prior_hash in player.last_message_hashes if
-                   prior_hash is not None]
-    if len(spam_levels) > 0:
-        spam_level = max(spam_levels)
-    player.last_message_hashes.append(message_hash)
-    if spam_level > SPAM_TOLERANCE:
-        player.spam_detections += 1
-    return spam_level
+    return None
 
 
 def progress_time(player):
