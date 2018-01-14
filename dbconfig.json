@@ -1,5 +1,3 @@
 {
-    "host":"localhost",
-    "user": "thecosmos",
-    "pwd": "[S5aOyNBJ1GFa2KSl]"
+    "url": "mongodb://thecosmos:S5aOyNBJ1GFa2KSl@thecosmos-shard-00-00-2ghqh.mongodb.net:27017,thecosmos-shard-00-01-2ghqh.mongodb.net:27017,thecosmos-shard-00-02-2ghqh.mongodb.net:27017/test?ssl=true&replicaSet=thecosmos-shard-0&authSource=admin"
 }
