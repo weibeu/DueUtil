@@ -28,7 +28,13 @@ def get_spam_level(player, message_content):
     Get's a spam level for a message using a 
     fuzzy hash > 50% means it's probably spam
     """
-    return None
+    spam_level = 0
+    if len(spam_levels) > 0:
+        spam_level = max(spam_levels)
+    player.last_message_hashes.append(message_hash)
+    if spam_level > SPAM_TOLERANCE:
+        player.spam_detections += 1
+    return spam_level
 
 
 def progress_time(player):
