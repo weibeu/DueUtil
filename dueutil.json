@@ -1,0 +1,18 @@
+{
+   "botToken":"NDAyMDI5NzQzMjA3MzUwMjcy.DTyzJA.HE82IH_fCwWjvNcuzO6s37KsE4c",
+   "owner":"◻ | The Cosmos#8601",
+   "shardCount":1,
+   "shardNames":[
+      "Clone DueUtil: shard 1"
+   ],
+   "logChannel": "390134592507609088/402033464599248896",
+   "errorChannel": "390134592507609088/402033529283674112",
+   "feedbackChannel": "390134592507609088/402033620945993728",
+   "bugChannel": "390134592507609088/402033713036394498",
+   "announcementsChannel":"390134592507609088/402033830669582346",
+   "carbonKey":"[https://www.carbonitex.net key you won't have]",
+   "discordBotsOrgKey":"https://discordbots.org/ key you also won't have",
+   "discordBotsKey": "https://bots.discord.pw/ key you also also won't have",
+   "discoinKey":"http://discoin.sidetrip.xyz/ you will never get",
+   "sentryAuth": "15681a195d234dadaa9e6d441f87ce0f2a3b4e5cfe9846efa79f1092b4b1e581"
+}
