@@ -1,5 +1,5 @@
 # DueUtil
-### The questing and fun discord bot!
+### The questing and fun discord bot ready to setup on heroku with mongodb connection, without installing mongodb element on heroku
 
 #### Running the bot
 (more detailed setup / install script later -- maybe)
@@ -16,12 +16,10 @@ Requirements:
 
 ```json
 {
-    "host":"localhost",
-    "user": "dueutil",
-    "pwd": "hunter1"
+    "url" : "your mongodb app authentication url (v 4)"
 }
 ```
-(the host will probably be localhost)
+signup at mongodb website, create cluster and get app authentication url
 
 ##### Configure DueUtil
 Create a file `dueutil.json` in the same folder as `run.py` (the root).
@@ -63,12 +61,31 @@ The logging channels are currenly needed (the bot may not work properly without 
  3. Use mongorestore
     ``mongorestore  --username your_use --password "your_pass" --authenticationDatabase admin ./database``
 
-##### Run DueUtil!
+##### Setup on heroku!
 
-DueUtil can be ran with: `python3 run.py`
-
-### Can't run the bot?!
-I expect it will be fiddly to get this bot running, but please don't ask me to set it up for you I'm not going to help.
-
-### Contribute
-If you want to fix up this repo simply create a pull request (with a detailed commit message of your changes). If your making changes based on a [trello](https://trello.com/b/1ykaASKj/dueutil) card please link to it.
+goto heroku, sign up and create app. IThen goto settings, reveal config vars and add following:
+```
+    MONGOHQ_URL : [your mongo db authentication url]
+    SENTRY_DSN : [your sentry dsn]
+    TOKEN : [your discord bot token]
+```
+Download and install heroku CLI
+You may clone this repo or download it to your local system.
+If you clone repo:
+    Just setup config files in your repo, goto heroku, link your github, and deploy your app from heroku.
+    Click on deploy branch in deploy tab
+    Login to you heroku CLI, `heroku login`
+    Enter `heroku ps:scale worker=1 -a [your app name on heroku]` to finally start your app
+    You may use `heroku logs -t -a [your app name on heroku]` to view heroku logs and python logs.
+If you downloaded zip:
+    Extract zip to folder, then open `quest-knight` (app root directory)
+    Open console/cmd here and enter following:
+    ```
+        git init
+        heroku git:remote -a [your app name]
+        git add .
+        git commit -am "initial commit"
+        git push heroku master
+    ```
+    To finally start, enter: `heroku ps:scale worker=1`
+    You may use `heroku logs -t -a [your app name on heroku]` to view heroku logs and python logs.
