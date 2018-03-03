@@ -1,18 +1,18 @@
 {
-   "botToken":"",
-   "owner":"",
+   "botToken":"NDE5NTQ3NjYxOTQzODMyNTg2.DXxuWw.zy9jcMqQMXUhqYVvjVio7HwyNvE",
+   "owner":"□ | The Cosmos#7777",
    "shardCount":1,
    "shardNames":[
       "Clone DueUtil: shard 1"
    ],
-   "logChannel": "[serverid]/[channelid]",
-   "errorChannel": "[serverid]/[channelid]",
-   "feedbackChannel": "[serverid]/[channelid]",
-   "bugChannel": "[serverid]/[channelid]",
-   "announcementsChannel":"[serverid]/[channelid]",
+   "logChannel": "390134592507609088/419550087711162378",
+   "errorChannel": "390134592507609088/419550123035590668",
+   "feedbackChannel": "390134592507609088/419550161673650181",
+   "bugChannel": "390134592507609088/419550188169068544",
+   "announcementsChannel":"390134592507609088/419550224319643678",
    "carbonKey":"[https://www.carbonitex.net key you won't have]",
    "discordBotsOrgKey":"https://discordbots.org/ key you also won't have",
    "discordBotsKey": "https://bots.discord.pw/ key you also also won't have",
    "discoinKey":"http://discoin.sidetrip.xyz/ you will never get",
-   "sentryAuth": "sentry public dsc token"
+   "sentryAuth": "https://624f6dff071944f9ae9b2e4987ab18c5@sentry.io/297812"
 }
