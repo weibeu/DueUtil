@@ -1,3 +1,3 @@
 {
-    "url": "your mongodb url"
+    "url": "mongodb://thecosmos:UvA3bGA7K3hH4BT9@quest-knight-shard-00-00-vqx2i.mongodb.net:27017,quest-knight-shard-00-01-vqx2i.mongodb.net:27017,quest-knight-shard-00-02-vqx2i.mongodb.net:27017/test?ssl=true&replicaSet=quest-knight-shard-0&authSource=admin"
 }
