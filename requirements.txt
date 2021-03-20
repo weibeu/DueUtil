@@ -10,6 +10,6 @@ numpy==1.13.3
 repoze.timeago==0.5
 jsonpickle==0.9.5
 emoji==0.4.5
-Pillow==3.4.2
+Pillow==8.1.1
 beautifulsoup4==4.6.0
 typing==3.6.2
